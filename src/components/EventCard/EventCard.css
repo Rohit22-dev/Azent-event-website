@@ -1,4 +1,4 @@
-.card {
+.event_card {
   width: 17rem;
   height: max-content;
   height: 17rem;
@@ -30,7 +30,7 @@ img {
   width: 100%;
 }
 
-.btn {
+.register_button {
   box-sizing: border-box;
   border: 1px solid #00c853;
   border-radius: 10px;

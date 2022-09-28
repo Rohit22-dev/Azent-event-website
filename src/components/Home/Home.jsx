@@ -6,7 +6,10 @@ import EventCard from "../EventCard/EventCard";
 const Home = () => {
   const [selectedCountry, setSelectedCountry] = useState("USA");
   return (
-    <div className="home">
+    <div className="home"> 
+
+      {/* Sidebar */}
+
       <div className="sidebar_container">
         <div className="sidebar">
           {Object.keys(data).map((line) => (
@@ -26,6 +29,9 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      {/* Events to be displayed */}
+
       <div className="event">
         {data[selectedCountry].map((item, index) => (
           <EventCard
@@ -37,6 +43,7 @@ const Home = () => {
           />
         ))}
       </div>
+
     </div>
   );
 };
